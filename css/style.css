@@ -1,0 +1,249 @@
+/* breakpoint: 402px, 874px */
+
+/* code for hidden SKIP LINK that reveals on focus */
+.skip a {
+    position: absolute;
+    left: -625rem;
+    top: auto;
+    width: 0.062rem; /*used calculator to figure out relative units*/
+    height: 0.0625rem;
+    /* width: 1px;
+    height: 1px; */
+}          
+.skip a:focus {
+    /* left: 10px;
+    top: 25px; */
+    left: 0.625rem;
+    top: 1.5625rem; /*used calculator to figure out relative units*/
+    width: auto;
+    height: auto;
+    color: #00274C;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* code for HEADER/NAV BAR */
+header {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 0.1875rem; /*used calculator to figure out relative units*/
+    font-size: 1rem;
+    /* gap: 3px;
+    font-size: 16px; */
+    align-items: center;
+}
+
+header img {
+    width: 7.5rem; /*used calculator to figure out relative units*/
+    /* width: 120px; */
+    height: auto;
+}
+
+nav {
+    margin-top: 0.9375rem; /*used calculator to figure out relative units*/
+    margin-bottom: 0.9375rem;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+}
+
+nav a {
+   border: solid #00274C 0.125rem;
+    /* border: solid #00274C 2px; */
+    color: #00274C;
+    padding: 0.125rem;
+    /* padding: 2px; */
+}
+
+nav li {
+    padding: 0.3125rem;
+    /* padding: 5px; */
+}
+
+nav a.active {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    padding: 0.3125rem;
+    /* padding: 5px; */
+}
+
+/* code for CONTAINER GRID on pages */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem;
+}
+
+.container section ol, .container section ul {
+    padding: 0.3125rem;
+    /* padding: 5px; */
+}
+
+.container img {
+    grid-column: 1/-1;
+}
+
+/* code for CONTENT on all pages */
+footer { 
+    color: #FFFFFF;
+    background-color: #00274C;
+    padding: 0.75px;
+    margin-top: 1.25px;
+    /* padding: 12px;
+    margin-top: 20px; */
+    text-align: center;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Atkinson Hyperlegible";
+    grid-column: 1/-1;
+    color: #00274C;
+    /* padding-bottom: 12px; */
+    padding-bottom: 0.75rem;
+}
+
+h2 {
+    font-family: "Atkinson Hyperlegible";
+    font-size: 1.5rem;
+    color: #00274C;
+    /* padding-bottom: 12px; */
+    padding-bottom: 0.75rem;
+}
+
+h3 {
+    font-family: "Atkinson Hyperlegible";
+    font-size: 1.25rem;
+    /* padding-bottom: 12px; */
+    padding-bottom: 0.75rem;
+}
+
+h4 {
+    font-family: "Atkinson Hyperlegible";
+    font-size: 1.1rem;
+}
+
+p {
+    font-family: 'Nunito Sans';
+    font-size: 1rem;
+    margin: 0.75rem;
+    /* margin: 12px; */
+}
+
+ul {
+    font-family: 'Nunito Sans';
+    font-size: 1rem;
+    margin: 0.75rem;
+    /* margin: 12px; */
+}
+
+/* code for IMAGE/VIDEO on every page */
+img, iframe { 
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0.75rem;
+    /* padding: 12px; */
+    line-height: 1.5;
+}
+
+.introduction {
+    grid-column: 1/-1;
+    background-color: #FFFFFF;
+    /* border: 5px solid #00274C; */
+    border: 0.3125rem solid #00274C;
+    padding: 0.9375rem;
+    border-radius: 0.375rem;
+    /* padding: 15px;
+    border-radius: 6px; */
+}
+
+/* code for RESUME page */
+.steps, .resume-resources, .resume-faq, .how-to-communicate, .star-method {
+    grid-column: 1/-1;
+    background-color: white;
+    /* border-bottom: 5px solid #FFCB05; */
+    border-bottom: 0.3125rem solid #FFCB05;
+    padding: 0.9375rem;
+    /* padding: 15px; */
+}
+
+.steps:hover, .resume-resource:hover, .resume-faq:hover, .how-to-communicate:hover, .star-method:hover{
+    grid-column: 1/-1;
+    background-color: pink;
+    padding: 0.9375rem;
+    /* padding: 15px; */
+}
+
+/* code for NETWORKING page */
+.networking-tips, .email-examples, .tiara-method, .resources {
+    grid-column: 1/-1;
+    background-color: white;
+    /* border-bottom: 5px solid #FFCB05; */
+    border-bottom: 0.3125rem solid #FFCB05;
+    padding: 0.9375rem;
+    /* padding: 15px; */
+}
+
+/* code for HOME */
+.why-resource, .start-here, .connect, .popular-resources {
+    grid-column: 1/-1;
+    background-color: white;
+    /* border-bottom: 5px solid #FFCB05; */
+    border-bottom: 0.3125rem solid #FFCB05;
+    padding: 0.9375rem;
+    /* padding: 15px; */
+}
+
+
+/* code for CAREER EXPLORATION */
+.ai-prompts, .resources {
+    grid-column: 1/-1;
+    background-color: white;
+    /* border-bottom: 5px solid #FFCB05; */
+    border-bottom: 0.3125rem solid #FFCB05;
+    padding: 0.9375rem;
+    /* padding: 15px; */
+}
+
+.pathways {
+    grid-column: 1/-1;
+    background-color: white;
+    padding: 0.9375rem;
+    /* padding: 15px; */
+}
+
+.career-paths {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 20px; */
+    gap: 1.25rem;
+    /* border-bottom: 5px solid #FFCB05; */
+    border-bottom: 0.3125rem solid #FFCB05;
+    padding: 0.9375rem;
+    /* padding: 15px; */
+}
+
+.user-experience, .data-analytics, .library, .software-development {
+    background-color: #9B9A6D;
+    /* padding: 15px; */
+    padding: 0.9375rem;
+    /* border-radius: 6px; */
+    border-radius: 0.375rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}

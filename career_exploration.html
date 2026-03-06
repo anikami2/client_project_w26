@@ -4,27 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>MSI Career Development Resource Hub</title>
 </head>
 
 <body>
-
+<div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-        <a href="">Skip to Main Content</a>
+        <!-- <a href="">Skip to Main Content</a> -->
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resumes</a></li>
                 <li><a href="network_connection.html">Networking & Connections</a></li>
-                <li><a href="career_exploration.html">Career Exploration</a></li>
+                <li><a href="career_exploration.html" class="active">Career Exploration</a></li>
             </ul>
         </nav>
-        <h1>Welcome to Career Exploration</h1>
-        <img src="images/UMSI_CareerFair2.jpg" alt="Students are at a career fair exploring connections">
     </header>
 
-    <main>
+    <main class="container" id = "main">
+     <h1>Welcome to Career Exploration</h1>
+        <img src="images/UMSI_CareerFair2.jpg" alt="Students are at a career fair exploring connections">
+
+    <section class="introduction">
         <h2>Explore Your Career Pathways</h2>
         <p>
             Career exploration is a vital step in shaping your professional journey. It involves researching various
@@ -35,46 +39,63 @@
         <p>
             This page provides resources and strategies to help you navigate the career exploration process effectively.
         </p>
+    </section> 
+
+    <section class="pathways">
         <p> UMSI students can pursue a wide range of roles across industries, sectors, and job functions. Some common career
             areas include: </p>
-        <h3> User Experience Design and Research </h3>
-        <ul> 
-            <li> UX Designer </li>
-            <li> Product Designer </li>
-            <li> UX Researcher </li>
-            <li> Interaction Designer </li>
-            <li> Content Designer </li>
-            <li> Service Designer </li>
-        </ul>
+    </section>
 
-        <h3> Data Analytics </h3>
-        <ul> 
-            <li> Data Analyst </li>
-            <li> Data Scientist </li>
-            <li> Information Analyst </li>
-            <li> Business Intelligence Analyst </li>
-            <li> Machine Learning Associate </li>
-            <li> Service Designer </li>
-        </ul>
+        <div class="career-paths">
 
-        <h3> Library Sciences and Information Science </h3>
-        <ul> 
-            <li> Librarian </li>
-            <li> Archivist </li>
-            <li> Digital Asset Manager </li>
-            <li> Knowledge Manager </li>
-        </ul>
+            <section class="user-experience">
+            <h3> User Experience Design and Research </h3>
+            <ul> 
+                <li> UX Designer </li>
+                <li> Product Designer </li>
+                <li> UX Researcher </li>
+                <li> Interaction Designer </li>
+                <li> Content Designer </li>
+                <li> Service Designer </li>
+            </ul>
+            </section>
 
-        <h3> Software Development </h3>
-        <ul> 
-            <li> Front-end Engineer </li>
-            <li> Software Developer </li>
-            <li> Scrum Master </li>
-        </ul>
+            <section class="data-analytics">
+            <h3> Data Analytics </h3>
+            <ul> 
+                <li> Data Analyst </li>
+                <li> Data Scientist </li>
+                <li> Information Analyst </li>
+                <li> Business Intelligence Analyst </li>
+                <li> Machine Learning Associate </li>
+                <li> Service Designer </li>
+            </ul>
+            </section>
+
+            <section class="library">
+            <h3> Library Sciences and Information Science </h3>
+            <ul> 
+                <li> Librarian </li>
+                <li> Archivist </li>
+                <li> Digital Asset Manager </li>
+                <li> Knowledge Manager </li>
+            </ul>
+            </section>
+
+            <section class="software-development">
+            <h3> Software Development </h3>
+            <ul> 
+                <li> Front-end Engineer </li>
+                <li> Software Developer </li>
+                <li> Scrum Master </li>
+            </ul>
+        </section>
+        </div>
 
          <!-- Content taken & modified from UMGPT with the prompt, "Write me an introduction to a webpage that serves as career exploration resource for University of Michigan School of Information students. Then, give me possible career paths. webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
 
+        <section class="ai-prompts">
         <h2> Use AI Prompts to find Career Paths that suit you Best </h2>
         <p> Not sure what career path suits you best? AI can suggest potential careers, provide insights on job market
             trends, and help you identify relevant skills for different industries. The key to using AI effectively is
@@ -92,7 +113,9 @@
                 [insert titles]. Please create a list of other types of jobs/internships that align with my skills,
                 interests, and goals.” </li>
         </ul>
+        </section>
 
+    <section class="resources">
     <h2>Networking Resources</h2>
             <ul>
                 <li>
@@ -103,8 +126,9 @@
                     A comprehensive guide with strategies tailored for UMSI students.
                 </li>
             </ul>
+    </section>
 
- <!-- Content taken & modified from the CDO's canvas page. Specifically the document "AI Prompts for Career-Related Topics: Processes"
+ <!-- Content taken & modified from the CDO's canvas page. Specifically the document "AI Prompts for Career-Related Topics: Processes" -->
 
     </main>
     <footer>
