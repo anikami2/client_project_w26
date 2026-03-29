@@ -26,7 +26,7 @@
 /* code for HEADER/NAV BAR */
 header {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0.1875rem; /*used calculator to figure out relative units*/
     font-size: 1rem;
     justify-items: center;
@@ -39,6 +39,7 @@ header img {
     width: 7.5rem; /*used calculator to figure out relative units*/
     /* width: 120px; */
     height: auto;
+    margin: 0.3125rem;
 }
 
 nav {
@@ -58,7 +59,7 @@ nav a {
 
 nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     list-style: none;
     padding: 0;
     margin: 0; 
@@ -99,8 +100,8 @@ nav a.active {
 footer { 
     color: #FFFFFF;
     background-color: #00274C;
-    padding: 0.75px;
-    margin-top: 1.25px;
+    padding: 0.75rem;
+    margin-top: 1.25rem;
     /* padding: 12px;
     margin-top: 20px; */
     text-align: center;
@@ -154,7 +155,7 @@ ul {
 /* code for IMAGE/VIDEO on every page */
 img, iframe { 
     max-width: 100%;
-    height: auto;
+    width: 100%;
 }
 
 body {
