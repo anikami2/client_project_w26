@@ -112,8 +112,6 @@ h2 {
     font-family: "Atkinson Hyperlegible";
     font-size: 1.5rem;
     color: #00274C;
-    /* padding-bottom: 12px; */
-    padding-bottom: 0.75rem;
 }
 
 h3 {
@@ -241,3 +239,239 @@ body {
     transition: none;
   }
 }
+
+/* TABLET VIEW  */
+@media screen and (min-width: 1024px) {
+   
+/* HEADER CODE */
+    header { 
+        display: grid; 
+        grid-template-columns: 1fr;
+        gap: 7px;
+        align-items: center;
+        justify-items: center; 
+
+    }
+
+    header img { 
+        grid-row: 1;
+        margin: 5px;
+        width: 7.5rem;
+    }
+
+    nav {
+        grid-row: 2;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    nav a.active {
+        padding: 15px;
+        width: auto;
+        text-align: center;
+    }
+
+/* GRID COLUMN */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px;
+    }
+
+/* FONT SIZES */
+    h1 {
+        font-size: 2.986rem;
+    }
+
+    h2 {
+        font-size: 2.074rem;
+    }
+
+    h3 {
+        font-size: 1.728rem;
+
+    }
+
+    h4 {
+        font-size: 1.44rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p, ul, ol {
+        font-size: 1.1rem;
+    }
+
+    .introduction iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .nav-link-buttons ul{ 
+        list-style: none;
+    }
+
+    .nav-link-buttons ul li{ 
+        display: inline-block;
+    }
+
+    .button{
+        display: inline-block;
+        padding: 12px 24px; 
+        border-radius: 6px;
+        text-decoration: none;
+        border: solid #00274C 0.125rem;
+        color: #FFFFFF;
+        background-color: #00274C;
+        margin-right: 12px;
+        margin-bottom: 10px;
+        font-family: "Nunito Sans";
+    }
+
+    .tiara-method-acronym {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tiara-method-acronym h4 {
+        text-decoration: underline;
+    }
+
+    .trends, .tiara-insights, .advice, .tiara-resources, .assignments {
+        grid-column: 1/3;
+    }
+
+/* 404 PAGE CODE  */
+    .errorpage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .errorimage {
+        grid-column: 2/4;
+        width: auto;
+        height: auto;
+    }
+
+    .content{ 
+        grid-column: 1/-1;
+    }
+
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content h2 { 
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 25px; 
+    }
+
+    .content li {
+        margin: 50px; 
+    }
+
+
+    /* FORM */
+    /* I TOOK THE CODE FROM A LECTURE ACTIVITY IN CLASS AND MADE IT MY OWN */
+
+    .container form {
+        grid-column: 1/-1;
+        max-width: 90%;
+        margin: 2rem auto;
+        border: solid #00274C 3px;
+        padding: 40px;
+    }
+
+   .container legend { 
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Atkinson Hyperlegible";
+        color: #00274C;
+        /* padding-bottom: 12px; */
+        padding-bottom: 0.75rem;
+    }
+
+    .label-name {
+        display: inline;
+        width:15%;
+        font-family: 'Nunito Sans';
+        font-size: 1rem;
+        margin: 0px;
+        color: #00274C;
+        font-weight: bold;
+    }
+
+    .container input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .container span {
+        margin-left:20%;
+        font-weight: bold;
+    }
+
+    .container textarea{
+        width: 100%;
+        height: 35vh;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .container label {
+        margin-left: 5px;
+    }
+
+    .container input[type=radio]{
+        display:inline;
+        width:inherit;
+    }
+
+    .container input[type=checkbox]{
+        display:inline-block;
+        width:inherit;
+    }
+
+    .container input[type=submit] {
+        background-color: #00274C;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .container input[type=submit]:hover {
+        opacity: 0.8;
+    }
+
+    .date-time {
+        display: inline-block;
+        margin: 5px;
+    }

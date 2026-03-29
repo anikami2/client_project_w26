@@ -47,10 +47,15 @@
       <h2>Start Here</h2>
       <div>
         <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-        <ul>
-            <li><a href="resume.html">Resumes</a></li>
-            <li><a href="network_connection.html">Networking & Connections</a></li>
-        </ul>
+        <div class="nav-link-buttons">
+          <ul>
+              <li><a href="resume.html" class="button">Resumes</a></li>
+              <li><a href="network_connection.html" class="button">Networking & Connections</a></li>
+              <li><a href="career_exploration.html" class="button">Career Exploration</a></li>
+              <li><a href="#booking-form" class="button">Book a Coaching Session</a></li>
+
+          </ul>
+        </div>
       </div>
       <div>
       </section>
@@ -72,13 +77,104 @@
       <p>
         The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides. <a href="https://umich.instructure.com/courses/137916" target="_blank">Visit the CDO website</a> or <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">find us on campus</a> to learn more, schedule a coaching session, or just say hello.
       </p>
-  </section>
        
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
+
+    <form id="booking-form"
+    action="https://formspree.io/f/xbdpdero"
+    method="POST"
+    >
+    <fieldset>
+      <legend>Book a Coaching Session</legend>
+
+      <!-- ABOUT THE STUDENT -->
+
+      <div class="text">
+        <label class="label-name" for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter Your Full Name">
+
+        <label class="label-name" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your School Email">
+
+        <label class="label-name" for="uniqname">Uniqname:</label>
+        <input type="text" id="uniqname" placeholder="Enter Your uniqname">
+      </div> 
+
+      <!-- STUDENT YEAR -->
+    <div class="student-year">
+      <h1 class="label-name"> Student Year:</h1><br>
+
+      <input type="radio" id="freshman" name="student-year" value="freshman">
+      <label for="freshman">Freshman</label><br>
+
+      <input type="radio" id="sophmore" name="student-year" value="sophmore">
+      <label for="sophmore">Sophmore</label><br>
+
+      <input type="radio" id="junior" name="student-year" value="junior">
+      <label for="junior">Junior</label><br>
+
+      <input type="radio" id="senior" name="student-year" value="senior">
+      <label for="senior">Senior</label><br>
+
+      <input type="radio" id="graduate-student" name="student-year" value="graduate-student">
+      <label for="graduate-student">Graduate Student</label><br>
+
+      <input type="radio" id="phd-student" name="student-year" value="phd-student">
+      <label for="phd-student">PhD Student</label><br>
+    </div> 
+
+      <!-- DATE -->
+    <div class ="date-time"> 
+      <label class="label-name" for="preferred-date">Preferred Date:</label>
+      <input type="date" id="preferred-date" name="preferred-date">
+    </div>
+
+      <!-- TIME -->
+      <div class="date-time">
+      <label class="label-name" for="preferred-time">Preferred Time:</label><br>
+      <input type="time" id="preferred-time" name="preferred-time">
+      </div>
+      
+      <!-- APPOINTMENT TYPE -->
+      <div class="appointment-type">
+        <h1 class="label-name"> Appointment Type:</h1><br>
+    
+        <input type="checkbox" id="resume-review" name="resume-review" value="resume-review">
+        <label for="resume-review">Resume Review</label>
+
+          <input type="checkbox" id="career-exploration" name="career-exploration" value="career-exploration">
+        <label for="career-exploration">Career Exploration</label>
+
+        <input type="checkbox" id="networking-guidance" name="networking-guidance" value="networking-guidance">
+        <label for="networking-guidance">Networking Guidance</label>
+      </div>
+
+       <!-- MEETING FORMAT -->
+      <div class="meeting-format">
+        <h1 class="label-name"> Meeting Format:</h1><br>
+
+      <input type="radio" id="in-person" name="in-person" value="in-person">
+      <label for="in-person">In-Person</label>
+
+      <input type="radio" id="virtual" name="virtual" value="virtual">
+      <label for="virtual">Virtual</label>
+      </div>
+      
+      <!-- SUBMIT -->
+      <input type="submit" id="submit" name="submit" value="submit"> 
+
+  </fieldset>
+  </form>
+  </section>
+
     </main>
     <footer>
         <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-        </footer>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        <script>
+          document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
 </body>
 </html>
